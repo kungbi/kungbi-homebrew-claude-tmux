@@ -5,15 +5,17 @@ class ClaudeTmuxSession < Formula
   sha256 "3be786f3ef1ee9bfa6f7688bed8771ae008385156369d428c2e9125768252619"
   license "MIT"
 
+  depends_on "tmux"
+
   def install
-    share.install "claude-tmux-session.zsh"
+    (share/"claude-tmux-session").install "claude-tmux-session.zsh"
     bin.install "bin/claude-tmux"
   end
 
   def caveats
     <<~EOS
       Add to ~/.zshrc:
-        source "#{share}/claude-tmux-session.zsh"
+        source "#{share}/claude-tmux-session/claude-tmux-session.zsh"
 
       Then apply:
         source ~/.zshrc
