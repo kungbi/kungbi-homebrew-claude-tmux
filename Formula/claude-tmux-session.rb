@@ -10,7 +10,6 @@ class ClaudeTmuxSession < Formula
   def install
     (share/"claude-tmux-session").install "claude-tmux-session.zsh"
     bin.install "bin/claude-tmux"
-    (share/"claude-tmux-session"/"bin").install "bin/claude-watch"
   end
 
   def caveats
