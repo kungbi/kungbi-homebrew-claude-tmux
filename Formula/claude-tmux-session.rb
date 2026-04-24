@@ -1,8 +1,8 @@
 class ClaudeTmuxSession < Formula
   desc "Claude Code tmux session manager for zsh (macOS)"
   homepage "https://github.com/kungbi/claude-tmux-session"
-  url "https://github.com/kungbi/claude-tmux-session/archive/refs/tags/v0.4.4.tar.gz"
-  sha256 "c713387cd8d270f4a7e954ff75ecb27355cb482bebd2f7f8651699e3a016bc75"
+  url "https://github.com/kungbi/claude-tmux-session/archive/refs/tags/v0.4.5.tar.gz"
+  sha256 "713b36bbcbf31bc94eaa9a8d1db6bf42f01abed5588ba4e1313a0b579485c155"
   license "MIT"
 
   depends_on "tmux"
